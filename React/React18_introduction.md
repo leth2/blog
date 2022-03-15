@@ -87,7 +87,7 @@ CSR의 화면 렌더링 단계 (**TTV === TTI)**
 1. 사용자 요청 및 서버응답 with HTML with JS link
 2. 자바스크립트 다운로드  (**view 불가능, interaction 불가능**)
 3. 자바스크립트 실행, React 실행(수화)
-4. 화면 렌더링 완료**(view 및 interaction 가능)** 
+4. 화면 렌더링 완료, React 적용완료 (**view 및 interaction 가능** )
 
 CSR의 리액트는 아래와 같은 html구조에 Javascript를 실행하면서 화면을 구성하게 됩니다.
 
@@ -104,9 +104,9 @@ CSR의 리액트는 아래와 같은 html구조에 Javascript를 실행하면서
 SSR의 화면 렌더링 단계 (**TTV !== TTI)**
 
 1. 사용자 요청 및 서버응답 with pre-renderd HTML with JS Link
-2. html 렌더링 완료, 자바스크립트 다운로드 (**view 가능, interaction 불가능**)
+2. 화면 렌더링 완료, 자바스크립트 다운로드 (**view 가능, interaction 불가능**)
 3. 자바스크립트 실행, **React 실행(hydration-수화)**
-4. React 적용완료 (**view 가능, interaction 불가능**)
+4. React 적용완료 (**view 및 interaction 가능** )
 
 SSR의 리액트는 아래와 같이 Pre-render된 html을 서버로부터 직접 수신합니다.
 
@@ -177,7 +177,6 @@ Suspense를 사용하게 되면 hydration도 개별적으로 수행하게 됩니
 ### 바로 사용할 수 있나?
 
 Suspense를 지원하는 Data Fetching 라이브러리가 필요합니다. 
-
 현재는 아래의 라이브러리 정도가 React18에서 도입될 Suspense를 지원하고 있습니다.
 
 - Relay
