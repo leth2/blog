@@ -25,6 +25,7 @@ React나 Vue.js, 나아가 svelt와 같은 현 시대의 front-end library 혹�
 
 [figma](https://www.figma.com/design-systems/)
 
+- 피그마에서 화면과 컴포넌트에 대한 기본적인 컨셉이 잡힌 이후에 개발을 시작함
 - 기획자들은 아직 피그마에 익숙하지 않음
 - 디자이너들은 그나마 피그마에 익숙함, 하지만 컴포넌트를 이용해서 디자인 시스템을 개발해달라고 요구는 해야 함
 
